@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Stopwatch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="popup" class="popup">
+        Welcome to Stopwatch
+    </div>
+
+    <div class="container">
+
+        <h1 class="title">
+            <i class="fa-solid fa-stopwatch"></i>
+            Professional Stopwatch
+        </h1>
+
+        <p class="subtitle">
+            Measure every second with speed, precision and elegance.
+        </p>
+
+        <div class="stopwatch-card">
+
+            <div class="time-display">
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="milliseconds">000</span>
+                    <small>Milliseconds</small>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="startBtn" class="btn start">
+                    <i class="fa-solid fa-play"></i>
+                    Start
+                </button>
+
+                <button id="pauseBtn" class="btn pause">
+                    <i class="fa-solid fa-pause"></i>
+                    Pause
+                </button>
+
+                <button id="resetBtn" class="btn reset">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Reset
+                </button>
+
+                <button id="lapBtn" class="btn lap">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    Lap
+                </button>
+
+                <button id="clearLapBtn" class="btn clear">
+                    <i class="fa-solid fa-trash"></i>
+                    Clear Laps
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="lap-container">
+
+            <h2>
+                <i class="fa-solid fa-list"></i>
+                Lap Records
+            </h2>
+
+            <ul id="lapList"></ul>
+
+        </div>
+
+        <section class="features">
+
+            <h2>Features</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Fast Performance</h3>
+                    <p>
+                        High-speed stopwatch with accurate timing using JavaScript.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Precise Timing</h3>
+                    <p>
+                        Tracks hours, minutes, seconds and milliseconds.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-flag"></i>
+                    <h3>Unlimited Laps</h3>
+                    <p>
+                        Record as many lap times as you want.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Responsive</h3>
+                    <p>
+                        Works perfectly on desktop, tablet and mobile devices.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about">
+
+            <h2>About This Stopwatch</h2>
+
+            <p>
+                This stopwatch is created using HTML, CSS and JavaScript.
+                It allows users to accurately measure elapsed time with
+                professional controls including Start, Pause, Reset,
+                Lap Recording and Clear Laps.
+            </p>
+
+            <p>
+                The interface includes a beautiful purple gradient,
+                glassmorphism card, animated buttons, popup notifications,
+                responsive layout and modern typography to create a
+                professional user experience.
+            </p>
+
+        </section>
+
+        <section class="shortcuts">
+
+            <h2>Keyboard Shortcuts</h2>
+
+            <table>
+
+                <tr>
+                    <th>Key</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td>S</td>
+                    <td>Start Stopwatch</td>
+                </tr>
+
+                <tr>
+                    <td>P</td>
+                    <td>Pause Stopwatch</td>
+                </tr>
+
+                <tr>
+                    <td>R</td>
+                    <td>Reset Stopwatch</td>
+                </tr>
+
+                <tr>
+                    <td>L</td>
+                    <td>Add Lap</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <footer>
+
+            <p>
+                © 2026 Professional Stopwatch |
+                Developed using HTML, CSS & JavaScript
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
